@@ -301,7 +301,8 @@ When the feature is removed from the app, compilation still works without any pr
 
 ### Known Issue
 
-Due the dagger limitation, if you implemented the DaggerNavigatorFactory, without any module to bind the navigator, it will cause compilation error.
+1. Due the dagger limitation, if you implemented the DaggerNavigatorFactory, without any module to bind the navigator, it will cause compilation error.
+2. It won't work with Dynamic Feature since the graph is built during compile time.
 
 ### References
 
