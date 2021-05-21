@@ -229,7 +229,7 @@ With this implementation, we also solve 2nd problem.
 
 ### Example
 
-Assume we have 1 project, the overview lookl like this
+Assume we have 1 project, the overview looks like this
 
 ![](./showcase/example-app-overview.png)
 
