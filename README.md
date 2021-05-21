@@ -277,11 +277,31 @@ if you draw the flow with direction, including all modules, the graph looks like
 
 ![](./showcase/example-overview-outflow.png)
 
-It is nightmare if you use Android Navigation Component, in worst case, you will have (N-1)N / 2 * 2, which N is number of entry point, * 2 means each screen go transit to each other.
+It is nightmare if you use Android Navigation Component, in worst case, you will have (N-1)N / 2 * 2, which N is number of screen, * 2 means each screen go transit to each other.
 
 Imagine you want to refactor 1 module, how many navigation graph xml file you need to change.
 
 With the solution, everyone only dependency on the XXXNavigator interface, as soon the interface doesn't change, there will be no impact to other modules.
+
+The worst case of navigation is N, where N is number of screen.
+
+#### Extra benefit
+
+1. Refactoring is very common for each project.
+
+You can simply route the screen from old implementation to new one.
+
+2. Dynamic module attachment
+
+Sometimes we want to create new feature, before the new feature is done, you can create the interface for the navigation. Then you won't be blocked by other development.
+
+In the example project, you can try to comment out any feature in build.gradle of app module.
+
+When the feature is removed from the app, compilation still works without any problem
+
+### Known Issue
+
+Due the dagger limitation, if you implemented the DaggerNavigatorFactory, without any module to bind the navigator, it will cause compilation error.
 
 ### References
 
