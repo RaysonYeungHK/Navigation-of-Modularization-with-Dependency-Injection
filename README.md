@@ -76,6 +76,7 @@ class MyActivity: Activity() {
                 .commitAllowingStateLoss()
     }
 }
+```
 
 If we put the interface into separated module, let's say navigation module, then each feature won't dependency on each other anymore
 
@@ -90,6 +91,7 @@ In here, we will use the idea which is coming from the DaggerViewModel
 With Dagger/Hilt, we can use following keywords, `@Binds` `@IntoMap`. This is also the core idea of DaggerViewModel
 
 First, we need to create a new annotation key for navigator
+
 ```
 @Target(
     AnnotationTarget.FUNCTION,
