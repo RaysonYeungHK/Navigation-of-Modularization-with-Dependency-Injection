@@ -9,5 +9,5 @@ import dagger.hilt.components.SingletonComponent
 @InstallIn(SingletonComponent::class)
 interface NavigatorFactoryModule {
     @Binds
-    fun bindNavigatorFactory(viewModelFactory: DaggerNavigatorFactory): NavigatorFactory
+    fun bindNavigatorFactory(navigatorFactory: DaggerNavigatorFactory): NavigatorFactory
 }
