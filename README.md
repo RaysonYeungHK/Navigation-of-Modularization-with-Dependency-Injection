@@ -277,7 +277,7 @@ if you draw the flow with direction, including all modules, the graph looks like
 
 ![](./showcase/example-overview-outflow.png)
 
-It is nightmare if you use Android Navigation Component, in worst case, you will have (N-1)N / 2 * 2, which N is number of screen, * 2 means each screen go transit to each other.
+It is nightmare if you use Android Navigation Component, in worst case, you will have (N-1)N / 2 * 2, which N is number of screen, * 2 means each screen can transit to each other.
 
 Imagine you want to refactor 1 module, how many navigation graph xml file you need to change.
 
