@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="This is Main Activity" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/feature_a_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Go to feature A" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/feature_b_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Go to feature B" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/feature_c_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Go to feature C" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

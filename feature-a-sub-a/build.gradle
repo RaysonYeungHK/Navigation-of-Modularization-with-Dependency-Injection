@@ -1,0 +1,10 @@
+plugins {
+    id 'com.android.library'
+}
+
+apply from: '../common.gradle'
+apply from: '../injection.gradle'
+
+dependencies {
+    implementation project(':navigation')
+}

@@ -1,0 +1,21 @@
+plugins {
+    id 'com.android.application'
+}
+
+apply from: '../common.gradle'
+apply from: '../injection.gradle'
+
+android {
+    defaultConfig {
+        applicationId "com.codedeco.modularization.navigation"
+    }
+}
+
+dependencies {
+    implementation project(':navigation')
+    implementation project(':feature-a')
+    implementation project(':feature-a-sub-a')
+    implementation project(':feature-a-sub-b')
+    implementation project(':feature-b')
+    implementation project(':feature-c')
+}

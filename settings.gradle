@@ -1,0 +1,8 @@
+include ':feature-a-sub-b'
+include ':feature-a-sub-a'
+include ':feature-c'
+include ':feature-b'
+include ':feature-a'
+include ':navigation'
+include ':app'
+rootProject.name = "Modularization Navigation"
