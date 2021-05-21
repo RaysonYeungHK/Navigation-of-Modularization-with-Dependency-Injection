@@ -24,8 +24,10 @@ There are lots of ways to solve the problem and this is 1 of the solution that I
 
 1. After modularized the project, each module doesn't know each other. We cannot transit from 1 screen to another screen.
 2. You can include 1 feature in another feature to solve problem #1.
+
    ![](./showcase/problem-feature-dependency.png)
 3. If you do #2, it cause cyclic dependency if Screen A can go to Screen B and Screen B can go to Screen A.
+
    ![](./showcase/problem-cyclic-dependency.png)
 4. With Android Navigation Component, when we move the activity / fragment, it has impact to all nav_graph.xml files that we defined.
 
